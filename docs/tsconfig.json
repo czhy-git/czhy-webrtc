@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "incremental": false,
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "types": [
+      "node",
+      "vitepress",
+      "vue",
+      "vite/client",
+      "czhy-webrtc/volar",
+      "vite-plugin-pwa/client",
+      "vite-plugin-pwa/vanillajs",
+      "vite-plugin-pwa/vue"
+    ]
+  },
+  "include": ["./env.d.ts", "**/*.vue", "**/*.ts", "**/*.d.ts"],
+  "exclude": ["node_modules"]
+}

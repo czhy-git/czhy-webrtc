@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "./es",
+    "emitDeclarationOnly": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true, // TODO https://github.com/vuejs/core/issues/6554
+    "lib": ["ESNext", "dom", "ESNext.Promise"],
+    "types": ["node", "vite/client"],
+    "baseUrl": "."
+  },
+  "include": [
+    "packages/index.ts",
+    "packages/hooks/*.ts",
+    "packages/utils/*.ts",
+    "packages/components/**/*.vue",
+    "packages/components/**/*.ts",
+    "types/*.d.ts",
+    "types/**/*.d.ts",
+    "packages/env.d.ts"
+  ],
+  "exclude": ["node_modules", "es", "dist"]
+}
