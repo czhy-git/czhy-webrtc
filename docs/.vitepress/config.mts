@@ -2,7 +2,7 @@
  * @Author: WangLi
  * @Date: 2026-04-09 07:13:00
  * @LastEditors: WangLi
- * @LastEditTime: 2026-04-14 20:22:36
+ * @LastEditTime: 2026-04-14 22:09:54
  */
 import { defineConfig } from 'vitepress'
 import { head, nav, sidebarConfigZh, mdPlugin, pwa } from './configs'

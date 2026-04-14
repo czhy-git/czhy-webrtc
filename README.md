@@ -2,7 +2,7 @@
  * @Author: WangLi
  * @Date: 2026-04-09 07:13:00
  * @LastEditors: WangLi
- * @LastEditTime: 2026-04-14 20:04:25
+ * @LastEditTime: 2026-04-15 06:51:17
 -->
 <p align="center">
   <a href="https://czhy.github.io/czhy-webrtc/zh-CN" target="_blank" rel="noopener noreferrer">
@@ -63,7 +63,7 @@ npm install czhy-webrtc
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Open%20Book.png" alt="Open Book" width="25" height="25" /> 文档
 
-[中文](https://czhy.github.io/czhy-webrtc/)
+[中文](https://czhy-git.github.io/czhy-webrtc/)
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Hammer and Wrench" width="25" height="25" /> 开发参与贡献
 
