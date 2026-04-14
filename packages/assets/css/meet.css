@@ -1,0 +1,197 @@
+/* 拖拽布局 */
+#layout .item {
+  color: #666;
+  font-size: 30px;
+  user-select: none;
+  text-align: center;
+  background-color: #ccc;
+}
+
+#layout .active {
+  border: 3px solid red;
+}
+
+.layout2,
+.layout3,
+.layout5,
+.layout7,
+.layout8,
+.layout9 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 布局1x1 */
+.layout1 .item {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  line-height: 200px;
+}
+
+/* 布局2x1 */
+.layout2 .item {
+  width: 45%;
+  height: 200px;
+  line-height: 200px;
+}
+
+/* 布局2x2 */
+.layout3 .item {
+  width: 45%;
+  height: 140px;
+  line-height: 140px;
+}
+.layout3 .item:nth-child(1),
+.layout3 .item:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+/* 布局1Left3Right */
+.layout4 .item:nth-child(1) {
+  float: left;
+  width: 190px;
+  height: 410px;
+  line-height: 410px;
+}
+.layout4 .item {
+  float: right;
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+  margin-bottom: 10px;
+}
+
+/* 布局3x2 */
+.layout5 .item {
+  width: 30%;
+  height: 150px;
+  line-height: 150px;
+  margin-bottom: 20px;
+}
+
+/* 布局1up_top_left+5 */
+.layout6 .item:nth-child(1) {
+  float: left;
+  width: 65%;
+  height: 200px;
+  line-height: 200px;
+  margin-bottom: 20px;
+}
+.layout6 .item:nth-child(2),
+.layout6 .item:nth-child(3) {
+  float: right;
+  width: 30%;
+  height: 90px;
+  line-height: 90px;
+  margin-bottom: 20px;
+}
+.layout6 .item:nth-child(4),
+.layout6 .item:nth-child(5),
+.layout6 .item:nth-child(6) {
+  float: left;
+  width: 30%;
+  height: 90px;
+  line-height: 90px;
+}
+.layout6 .item:nth-child(4),
+.layout6 .item:nth-child(5) {
+  margin-right: 15px;
+}
+.layout6 .item:nth-child(6) {
+  width: 30%;
+}
+
+/* 布局3x3 */
+.layout7 .item {
+  width: 30%;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 20px;
+}
+
+/* 布局4x4 */
+.layout8 .item {
+  width: 24%;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 5px;
+}
+
+/* 布局8x8 */
+.layout9 .item {
+  width: 12%;
+  height: 50px;
+  font-size: 24px !important;
+  line-height: 50px;
+  margin-bottom: 3px;
+}
+/* 遮罩 */
+#mask {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#mask span {
+  color: #ccc;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  animation: load 2s linear infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 画板样式 */
+#localCanvas {
+  top: 50%;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+#localCanvas .canvasBtn {
+  left: 10px;
+  bottom: 20px;
+  z-index: 99;
+  position: absolute;
+}
+
+#localCanvas .canvasBtn .wipe {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 2px 20px;
+  line-height: 25px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #44acb7;
+}
+#layoutss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#layoutss img {
+  width: 32%;
+  margin-bottom: 5px;
+}
